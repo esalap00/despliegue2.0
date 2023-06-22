@@ -1,0 +1,18 @@
+.cardGrid {
+    padding-top: 8px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+  }
+
+  .cardContent {
+    flex-grow: 1;
+  }
+
+  .fotoCartel {
+    width: 40%;
+    margin-left: 30%;
+  }
