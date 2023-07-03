@@ -5,7 +5,7 @@ const dataBase = require("./db");
 const app = express();
 app.use(express.json());
 app.use(cors());
-dataBase();
+
 
 app.use("/api/usuario", require("./routes/usuario"));
 app.use("/api/visualizaciones", require("./routes/visualizaciones"));
@@ -23,7 +23,7 @@ if(process.env.NODE_ENV === "production"){
     });
 }
 
-dataBase.connectDB().then(() => {
+connectDB().then(() => {
 	app.listen(5000, function (req, res){
 		console.log("Escuchando en 5000");
 
