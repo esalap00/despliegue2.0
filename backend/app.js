@@ -23,6 +23,9 @@ if(process.env.NODE_ENV === "production"){
     });
 }
 
-app.listen(5000, function (req, res){
-    console.log("Escuchando en 5000");
-});
+connectDb().then()=> {
+	app.listen(5000, function (req, res){
+		console.log("Escuchando en 5000");
+
+	});
+}).catch((err)=> console.log("A la mieeeeeeeeerda"));
