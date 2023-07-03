@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./db");
+const path = require("path");
 
 const app = express();
 app.use(express.json());
