@@ -28,4 +28,4 @@ connectDb().then()=> {
 		console.log("Escuchando en 5000");
 
 	});
-}).catch((err)=> console.log("A la mieeeeeeeeerda"));
+}).catch((err)=> console.log("Base de datos no conectada"));
